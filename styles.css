@@ -1,6 +1,7 @@
 body{
     background-color: #f5d9df;
     font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
 }
 
 #mainNavbar{
@@ -20,3 +21,13 @@ body{
 #mainNavbar .nav-link:hover{
     color: #EA1C2C;
 }
+
+#sectionContainerText1 h1{
+    font-size: 2rem
+}
+
+#sectionContainerText1 span{
+    color: red;
+    font-weight: 800;
+}   
+
