@@ -42,7 +42,7 @@
         </nav>
         <!--Navigation Bar end-->
 
-        <!--Section Container start-->
+        <!--Section Container 1 start-->
         <section class="container-fluid px-0">
             <div class="row align-items-center">
                 <div class="col-lg-6 px-0">
@@ -61,7 +61,57 @@
                 </div>
             </div>
         </section>
-        <!--Section Container end -->
+        <!--Section Container 1 end -->
+
+        <!--Section Container 2 start-->
+        <section class="container-fluid px-0">
+            <div id="section2" class="row align-items-center">
+                <div class="col-md-6 order-2 order-lg-1">
+                    <img src="imgs/candy2.jpg" alt="Milk Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                    <div class="row justify-content-center">
+                        <div id="sectionContainerText2" class="col-10 col-lg-8 mb-5 mb-lg-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                            <img id="lolli" src="imgs/lolli.png" alt="" class="d-none d-lg-inline">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laborum nam similique praesentium ut ipsa. Rerum ab aliquid aut, id tempora quia aliquam quam quos. Similique provident libero laboriosam voluptas, laborum consequuntur optio amet iure aliquam quibusdam quae fugiat quis ullam est officia id ut tempore aut blanditiis sapiente facilis.</p>
+                        </div>-
+                    </div>
+                </div>
+            </div>
+
+            <div id="section2" class="row align-items-center">
+                <div class="col-md-6 order-2 order-lg-2">
+                    <img src="imgs/candy3.jpg" alt="Milk Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-1">
+                    <div class="row justify-content-center">
+                        <div id="sectionContainerText2" class="col-10 col-lg-8 mb-5 mb-lg-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                            <img id="lolli" src="imgs/lolli.png" alt="" class="d-none d-lg-inline">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laborum nam similique praesentium ut ipsa. Rerum ab aliquid aut, id tempora quia aliquam quam quos. Similique provident libero laboriosam voluptas, laborum consequuntur optio amet iure aliquam quibusdam quae fugiat quis ullam est officia id ut tempore aut blanditiis sapiente facilis.</p>
+                        </div>-
+                    </div>
+                </div>
+            </div>
+
+            <div id="section2" class="row align-items-center">
+                <div class="col-md-6 order-2 order-lg-1">
+                    <img src="imgs/candy4.jpg" alt="Milk Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                    <div class="row justify-content-center">
+                        <div id="sectionContainerText2" class="col-10 col-lg-8 mb-5 mb-lg-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                            <img id="lolli" src="imgs/lolli.png" alt="" class="d-none d-lg-inline">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laborum nam similique praesentium ut ipsa. Rerum ab aliquid aut, id tempora quia aliquam quam quos. Similique provident libero laboriosam voluptas, laborum consequuntur optio amet iure aliquam quibusdam quae fugiat quis ullam est officia id ut tempore aut blanditiis sapiente facilis.</p>
+                        </div>-
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section Container 2 end-->
 
         <!--Jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -69,6 +119,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <!--Bootstrap script-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+        <script>
+            $(function(){
+                $(document).scroll(function(){
+                    var $nav = $("#mainNavbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                })
+            })
+        </script>
     </body>
 </html>
